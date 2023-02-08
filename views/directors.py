@@ -14,7 +14,7 @@ class DirectorsView(Resource):
 
 
 
-@directors_ns.route("/<int: bid>")
+@directors_ns.route("/<int:bid>")
 class DirectorView(Resource):
     def get(self, bid):
         director = director_service.get_one(bid)
